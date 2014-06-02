@@ -1,0 +1,33 @@
+{config_load file="test.conf" section="setup"}
+{include file="header.tpl" title=Calendar}
+			<div class="content-box"><!-- Start Content Box -->
+				
+				<div class="content-box-header">
+					
+					<h3>Calendar</h3>
+					
+					<div class="clear"></div>
+					
+				</div> <!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+					
+					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+						
+						<div class="notification attention png_bg">
+							<a href="#" class="close"><img src="templates/resources/images/icons/cross_grey_small.png" title="Close this notification" alt="close" /></a>
+							<div>
+								From Start Date to End Date, this is the roadmap of cycle days. Future cycle days are subject to change.
+							</div>
+						</div>
+					
+					
+					{cal}
+						
+						
+					</div>
+				</div> <!-- End .content-box-content -->
+				
+			</div> <!-- End .content-box -->
+			
+{include file="footer.tpl"}
